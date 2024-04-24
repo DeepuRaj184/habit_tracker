@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Myhabit } from './context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Myhabit>
+    <React.StrictMode>
     <App />
-  </React.StrictMode>
+    </React.StrictMode>
+  </Myhabit>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
